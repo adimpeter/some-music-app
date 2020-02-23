@@ -1,0 +1,181 @@
+body {
+    font-size: 16px;
+}
+
+.music-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.music-card {
+    height: 300px;
+    width: 300px;
+    background-color: #000;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.music-card .title-card {
+    padding: 0px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.music-card .title-card h3 {
+    margin: 0px;
+    font-size: 1.3em;
+}
+.music-card .play-btn {
+    width: auto;
+    height: auto;
+    color: #000;
+    font-size: 80px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    flex: 2;
+}
+.music-card .play-btn:hover {
+    cursor: pointer;
+}
+.music-card-container .ambiant {
+    width: 250px;
+    height: 250px;
+}
+
+.slider-controler {
+    position: absolute;
+    transform: rotate(90);
+    right: 10px;
+}
+
+
+.site-wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+}
+.site-wrapper .side-bar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #e9e9e9;
+}
+.site-wrapper .side-bar header {
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid #c9c9c9;
+}
+.site-wrapper .main-content {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.side-bar .menus {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.side-bar .menus a {
+    display: flex;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 0.7em;
+}
+.side-bar .menus a:hover {
+    text-decoration: none;
+    background-color: #F8FAFC;
+}
+
+.main-content section {
+    margin: 5px;
+    background-color: #fff;
+    padding:10px;
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    color: #999;
+}
+
+/* misc */
+.heading {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c9c9c9;
+    display: inline-block;
+}
+.bg-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #c9c9c9; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #999; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #000; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
