@@ -23,3 +23,7 @@ Route::get('/admin', 'AdminController@index')->name('admin.home');
 
 Route::get('/music/create', 'MusicController@create')->name('music.create');
 Route::post('/music', 'MusicController@store')->name('music.store');
+
+
+// route used to test laravel application
+Route::get('/test', 'TestController@testGuzzle');
