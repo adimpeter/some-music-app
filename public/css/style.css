@@ -9,8 +9,8 @@ body {
     justify-content: space-between;
 }
 .music-card {
-    height: 300px;
-    width: 300px;
+    height: 220px;
+    width: 220px;
     background-color: #000;
     margin: 10px;
     position: relative;
@@ -37,7 +37,7 @@ body {
 }
 .music-card .title-card h3 {
     margin: 0px;
-    font-size: 1.3em;
+    font-size: 0.8em;
 }
 .music-card .play-btn {
     width: auto;
