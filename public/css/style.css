@@ -1,8 +1,102 @@
+.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.849);
+}
+body 
+{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    position: relative;
+}
+h1,h2,h3,h4,h5 {
+    font-family: 'Roboto Slab', serif;
+    margin: 3px 0px;
+    color: #483d3f;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #000;
+}
+
+.app .header {
+    height: 50px;
+    
+}
+.app .main-content {
+    flex: 1;
+}
+.app .footer {
+    height: auto;
+    margin-top: auto;
+    display: flex;
+    padding: 40px;
+}
+
+.music-thumb {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    background-color: #fff;
+    min-width: 250px;
+    align-self: center;
+    padding: 20px;
+}
+.box-shadow {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .14);
+}
+
+.swiper-slide {
+    width: 100% !important;
+    margin: 0px 10px;
+}
+.bg-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ambiant-music-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.music-thumb-sm {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.music-thumb-sm i {
+    font-size: 1.5em;
+}
+.music-thumb-sm div {
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    color: #fff;
+    text-shadow: 0 0 rgba(0, 0, 0, .14);
+}
+
 body {
     font-size: 16px;
 }
 
-.music-card-container {
+/* .music-card-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -34,7 +128,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 .music-card .title-card h3 {
     margin: 0px;
     font-size: 0.8em;
@@ -43,9 +137,8 @@ body {
     width: auto;
     height: auto;
     color: #000;
-    font-size: 80px;
-    text-align: center;
-    padding: 0px;
+    font-size: 2em;
+    padding-top: 20px;
     margin: 0px;
     flex: 2;
 }
@@ -55,6 +148,29 @@ body {
 .music-card-container .ambiant {
     width: 250px;
     height: 250px;
+}
+
+.waveform-container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    padding: 20px;
+    height: 150px;
+    
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.music-thumb-sm .play-btn {
+    width: unset;
+    height: unset;
+    color: #000;
+    font-size: unset;
+    padding-top: unset;
+    margin: unset;
+    flex: unset;
 }
 
 .slider-controler {

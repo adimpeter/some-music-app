@@ -16,7 +16,7 @@ class Music extends Model
     ];
     public function genre()
     {
-        return $this->hasOne('App\Genre');
+        return $this->belongsTo('App\Genre');
     }
 
     public function tone()
